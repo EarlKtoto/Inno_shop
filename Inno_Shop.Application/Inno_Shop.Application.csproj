@@ -7,4 +7,12 @@
         <RootNamespace>Application</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\Inno_Shop.Infrastructure\Inno_Shop.Infrastructure.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt" Version="1.0.0" />
+      <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    </ItemGroup>
 </Project>

@@ -9,31 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd4c5fca-c5f1-4ab9-a314-061f65828188" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Entities/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Enums/ProductAvailability.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Enums/UserRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Inno_Shop.Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Interfaces/IProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Interfaces/IUserRrepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Resources/Messages.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Resources/Messages.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Inno_ShopDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Inno_Shop.Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_shop.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EarlKtoto&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EarlKtoto/Inno_shop.git&quot;,
+    &quot;accountId&quot;: &quot;5164ec8e-f080-491a-8010-d87069a64467&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Entities/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Enums/ProductAvailability.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,35 +49,36 @@
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Resources/Messages.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Resources/Messages.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Inno_ShopDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="35LePgV2TpkCONUtia9rdkkGKQY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Api: http">
     <configuration name="Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" />
@@ -123,8 +120,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762893758941</updated>
-      <workItem from="1762893764831" duration="5166000" />
+      <workItem from="1762893764831" duration="5466000" />
+      <workItem from="1763048615193" duration="9330000" />
     </task>
+    <task id="LOCAL-00001" summary="Inno_Shop 0.1">
+      <option name="closed" value="true" />
+      <created>1762899188709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762899188710</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,8 +139,21 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Inno_Shop 0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
