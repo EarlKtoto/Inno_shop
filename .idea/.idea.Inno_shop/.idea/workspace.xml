@@ -9,12 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd4c5fca-c5f1-4ab9-a314-061f65828188" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inno_Shop.Application/Validators/UserValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +39,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Inno_Shop.Application/Validators/UserValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Entities/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Inno_Shop.Domain/Enums/ProductAvailability.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,7 +121,8 @@
       <option name="presentableId" value="Default" />
       <updated>1762893758941</updated>
       <workItem from="1762893764831" duration="5466000" />
-      <workItem from="1763048615193" duration="9330000" />
+      <workItem from="1763048615193" duration="9549000" />
+      <workItem from="1763659384957" duration="5121000" />
     </task>
     <task id="LOCAL-00001" summary="Inno_Shop 0.1">
       <option name="closed" value="true" />
@@ -131,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762899188710</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inno_Shop 0.3 (Inno_Shop 0.2 is missed)">
+      <option name="closed" value="true" />
+      <created>1763335182655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763335182656</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +162,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Inno_Shop 0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.1" />
+    <MESSAGE value="Inno_Shop 0.3 (Inno_Shop 0.2 is missed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.3 (Inno_Shop 0.2 is missed)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

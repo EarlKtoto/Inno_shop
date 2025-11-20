@@ -6,14 +6,17 @@ namespace Application.Services;
 public class UserService
 {
     readonly UserRepository _userRepository;
+    readonly UserValidator _userValidator;
 
-    public UserService(UserRepository userRepository)
+    public UserService(UserRepository userRepository, UserValidator userValidator)
     {
         _userRepository = userRepository;
+        _userValidator = userValidator;
     }
 
     public async Task<User> RegisterUserAsync(User user, string password)
     {
+        _userValidator.Validate(user);
         if(_userRepository.GetByIdAsync(user.Id) != null)
             throw new Exception("User already exists");
 
@@ -53,6 +56,34 @@ public class UserService
         await _userRepository.UpdateAsync(user);
     }
 
+    public async Task RequestPasswordResetAsync(string email)
+    {
+        var user = await _userRepository.GetByEmailAsync(email);
+        if(user == null)
+            throw new Exception("User not found");
+        
+        user.PasswordResetToken = Guid.NewGuid().ToString();
+        user.PasswordResetTokenExpires = DateTime.UtcNow.AddHours(1);
+        
+        await _userRepository.UpdateAsync(user);
+    }
+
+    public async Task ResetPasswordAsync(string token, string newPassword)
+    {
+        var user = await _userRepository.GetByPasswordResetTokenAsync(token);
+        if(user == null)
+            throw new Exception("Invalid token");
+        
+        if(user.PasswordResetTokenExpires < DateTime.UtcNow)
+            throw new Exception("Password reset token expired");
+        
+        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
+        user.PasswordResetToken = null;
+        user.PasswordResetTokenExpires = null;
+        
+        await _userRepository.UpdateAsync(user);
+    }
+
     public async Task ActivateUserAsync(long id)
     {
         var user = await _userRepository.GetByIdAsync(id);
@@ -71,6 +102,7 @@ public class UserService
 
     public async Task UpdateUserAsync(User user)
     {
+        _userValidator.Validate(user);
         if(_userRepository.GetByIdAsync(user.Id) == null)
             throw new Exception("User not found");
         await _userRepository.UpdateAsync(user);
@@ -90,7 +122,7 @@ public class UserService
         return _userRepository.GetByIdAsync(id).Result;
     }
 
-    public IEnumerable<User> GetAllUsersInformation()
+    public async Task<List<User>> GetAllUsersInformationAsync()
     {
         return _userRepository.GetAllAsync().Result;
     }

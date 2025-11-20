@@ -25,7 +25,7 @@ public class Product
     public int Quantity { get; set; }
     
     [Required]
-    public User UserId { get; set; }
+    public long UserId { get; set; }
     
     [Required]
     public DateTimeOffset CreatedOn { get; set; }

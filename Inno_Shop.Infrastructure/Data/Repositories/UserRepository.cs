@@ -47,6 +47,11 @@ public class UserRepository : IUserRrepository
         return await _context.Users.FirstOrDefaultAsync(u => u.EmailConfirmationToken == token);
     }
 
+    public async Task<User> GetByPasswordResetTokenAsync(string token)
+    {
+        return await _context.Users.FirstOrDefaultAsync(u => u.PasswordResetToken == token);
+    }
+
     public async Task<List<User>> GetAllAsync()
     {
         return await _context.Users.ToListAsync();
