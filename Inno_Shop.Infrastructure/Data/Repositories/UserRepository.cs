@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Inno_Shop.Infrastructure.Data.Repositories;
 
-public class UserRepository : IUserRrepository
+public class UserRepository : IUserRepository
 {
     readonly Inno_ShopDbContext _context;
     

@@ -1,9 +1,10 @@
 using Inno_Shop.Domain.Entities;
+using Inno_Shop.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inno_Shop.Infrastructure.Data.Repositories;
 
-public class ProductRepository
+public class ProductRepository : IProductRepository
 {
     readonly Inno_ShopDbContext _context;
 

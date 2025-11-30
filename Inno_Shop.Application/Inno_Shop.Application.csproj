@@ -9,15 +9,14 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Inno_Shop.Infrastructure\Inno_Shop.Infrastructure.csproj"/>
-        <ProjectReference Include="..\Inno_Shop.Api\Inno_Shop.Api.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="BCrypt" Version="1.0.0" />
       <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
       <PackageReference Include="FluentValidation" Version="12.1.0" />
       <PackageReference Include="JWT" Version="11.0.0" />
       <PackageReference Include="MailKit" Version="4.14.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0" />
       <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
     </ItemGroup>
 </Project>

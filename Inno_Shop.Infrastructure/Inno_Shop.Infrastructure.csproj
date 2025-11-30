@@ -9,4 +9,9 @@
     <ItemGroup>
         <ProjectReference Include="../Inno_Shop.Domain/Inno_Shop.Domain.csproj"/>
     </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.11" />
+    </ItemGroup>
 </Project>

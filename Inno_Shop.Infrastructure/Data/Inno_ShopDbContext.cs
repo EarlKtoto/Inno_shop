@@ -8,9 +8,8 @@ public class Inno_ShopDbContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public Inno_ShopDbContext(DbContextOptions<Inno_ShopDbContext> options) : base(options)
     {
-        
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

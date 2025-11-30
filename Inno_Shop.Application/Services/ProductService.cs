@@ -1,14 +1,15 @@
 using Inno_Shop.Domain.Entities;
+using Inno_Shop.Domain.Interfaces;
 using Inno_Shop.Infrastructure.Data.Repositories;
 
 namespace Application.Services;
 
 public class ProductService
 {
-    readonly ProductRepository _productRepository;
+    readonly IProductRepository _productRepository;
     readonly ProductValidator _productValidator;
 
-    public ProductService(ProductRepository productRepository, ProductValidator productValidator)
+    public ProductService(IProductRepository productRepository, ProductValidator productValidator)
     {
         _productRepository = productRepository;
         _productValidator = productValidator;

@@ -1,14 +1,15 @@
 using Inno_Shop.Domain.Entities;
+using Inno_Shop.Domain.Interfaces;
 using Inno_Shop.Infrastructure.Data.Repositories;
 
 namespace Application.Services;
 
 public class UserService
 {
-    readonly UserRepository _userRepository;
+    readonly IUserRepository _userRepository;
     readonly UserValidator _userValidator;
 
-    public UserService(UserRepository userRepository, UserValidator userValidator)
+    public UserService(IUserRepository userRepository, UserValidator userValidator)
     {
         _userRepository = userRepository;
         _userValidator = userValidator;

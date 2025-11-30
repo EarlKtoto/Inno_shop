@@ -7,7 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Middleware\" />
+        <ProjectReference Include="..\Inno_Shop.Application\Inno_Shop.Application.csproj"/>
+        <ProjectReference Include="..\Inno_Shop.Infrastructure\Inno_Shop.Infrastructure.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.0" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+    </ItemGroup>
+    
 </Project>
