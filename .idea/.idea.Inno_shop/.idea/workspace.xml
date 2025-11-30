@@ -9,13 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd4c5fca-c5f1-4ab9-a314-061f65828188" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/EmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/EmailService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,22 +68,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Api: http.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Api: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Api: http">
     <configuration name="Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" />
@@ -120,6 +117,34 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Inno_Shop.Api/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="inno_shop.api" />
+          <option name="containerName" value="inno_shop.api" />
+          <option name="contextFolderPath" value="C:\Users\Kto-to\RiderProjects\Inno_Shop" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Inno_Shop.Api/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,7 +158,7 @@
       <workItem from="1763659384957" duration="5456000" />
       <workItem from="1764365651326" duration="1024000" />
       <workItem from="1764435312945" duration="3892000" />
-      <workItem from="1764535998432" duration="7709000" />
+      <workItem from="1764535998432" duration="8002000" />
     </task>
     <task id="LOCAL-00001" summary="Inno_Shop 0.1">
       <option name="closed" value="true" />
@@ -175,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764541073536</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Inno_Shop 0.7">
+      <option name="closed" value="true" />
+      <created>1764544903816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764544903816</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +234,8 @@
     <MESSAGE value="Inno_Shop 0.4" />
     <MESSAGE value="Inno_Shop 0.5" />
     <MESSAGE value="Inno_Shop 0.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.6" />
+    <MESSAGE value="Inno_Shop 0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
