@@ -17,7 +17,7 @@ public class EmailService
     public async Task SendEmailAsync(string email, string subject, string body)
     {
         var message = new MailMessage();
-        message.From = new MailAddress(_configuration["Email:SenderEmail"], _configuration["Email:SenderName"]);
+        message.From = new MailAddress(_configuration["Email:SenderEmail"]);
         message.To.Add(email);
         message.Subject = subject;
         message.Body = body;

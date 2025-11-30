@@ -18,8 +18,10 @@ public class UserService
     public async Task<User> RegisterUserAsync(User user, string password)
     {
         _userValidator.Validate(user);
-        if(_userRepository.GetByIdAsync(user.Id) != null)
-            throw new Exception("User already exists");
+        
+        var existingUser = await _userRepository.GetByEmailAsync(user.Email);
+        if(existingUser != null)
+            throw new Exception("User with this email already exists");
 
         user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
         user.EmailConfirmationToken = Guid.NewGuid().ToString();

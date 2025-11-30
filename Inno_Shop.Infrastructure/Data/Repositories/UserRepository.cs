@@ -15,7 +15,6 @@ public class UserRepository : IUserRepository
 
     public async Task CreateAsync(User user)
     {
-        user.Id = _context.Users.Max(x => x.Id) + 1;
         _context.Users.Add(user);
         await _context.SaveChangesAsync(); 
     }

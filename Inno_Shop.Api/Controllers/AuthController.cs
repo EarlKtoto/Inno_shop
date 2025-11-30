@@ -1,4 +1,7 @@
 using Application.Services;
+using Application.DTOs;
+using Inno_Shop.Domain.Entities;
+using Inno_Shop.Domain.Enums;
 
 namespace Inno_Shop.Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +22,22 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(User user, string password)
+    public async Task<IActionResult> Register([FromBody] RegisterRequest request)
     {
-        var created = await _userService.RegisterUserAsync(user, password);
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        var user = new User
+        {
+            Name = request.Name,
+            Email = request.Email,
+            Role = request.Role.HasValue ? (UserRole)request.Role.Value : UserRole.User,
+            IsActive = false
+        };
+
+        var created = await _userService.RegisterUserAsync(user, request.Password);
 
         var link = $"https://localhost:5237/api/auth/confirm?token={created.EmailConfirmationToken}";
 
@@ -39,25 +55,40 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login(string email, string password)
+    public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
-        var user = await _userService.AuthenticateUserAsync(email, password);
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        var user = await _userService.AuthenticateUserAsync(request.Email, request.Password);
         var token = _jwtService.GenerateToken(user);
 
         return Ok(new { token });
     }
 
     [HttpPost("forgot-password")]
-    public async Task<IActionResult> ForgotPassword(string email)
+    public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
     {
-        await _userService.RequestPasswordResetAsync(email);
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        await _userService.RequestPasswordResetAsync(request.Email);
         return Ok("Reset link sent");
     }
 
     [HttpPost("reset-password")]
-    public async Task<IActionResult> ResetPassword(string token, string newPassword)
+    public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequest request)
     {
-        await _userService.ResetPasswordAsync(token, newPassword);
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        await _userService.ResetPasswordAsync(request.Token, request.NewPassword);
         return Ok("Password updated");
     }
 }

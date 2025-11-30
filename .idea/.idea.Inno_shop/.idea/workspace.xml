@@ -9,26 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd4c5fca-c5f1-4ab9-a314-061f65828188" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/AuthController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/ProductsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Api/Middleware/ExceptionHandlingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Inno_ShopDbContextFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Inno_shop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/Inno_Shop.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inno_Shop.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Inno_Shop.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/ProductService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/EmailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/EmailService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Application/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Domain/Inno_Shop.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Inno_Shop.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Domain/Interfaces/IUserRrepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Domain/Interfaces/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Domain/Resources/Messages.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Domain/Resources/Messages.resx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Inno_ShopDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Inno_ShopDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/ProductRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Data/Repositories/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Inno_Shop.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Inno_Shop.Infrastructure/Inno_Shop.Infrastructure.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +133,7 @@
       <workItem from="1763659384957" duration="5456000" />
       <workItem from="1764365651326" duration="1024000" />
       <workItem from="1764435312945" duration="3892000" />
-      <workItem from="1764535998432" duration="4956000" />
+      <workItem from="1764535998432" duration="7709000" />
     </task>
     <task id="LOCAL-00001" summary="Inno_Shop 0.1">
       <option name="closed" value="true" />
@@ -180,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764439220789</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Inno_Shop 0.6">
+      <option name="closed" value="true" />
+      <created>1764541073535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764541073536</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +200,8 @@
     <MESSAGE value="Inno_Shop 0.3 (Inno_Shop 0.2 is missed)" />
     <MESSAGE value="Inno_Shop 0.4" />
     <MESSAGE value="Inno_Shop 0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.5" />
+    <MESSAGE value="Inno_Shop 0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inno_Shop 0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
